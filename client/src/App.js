@@ -2,8 +2,8 @@ import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Home Page</h1>
+    <div>
+      <h1>Home Pagecd</h1>
     </div>
   );
 }
