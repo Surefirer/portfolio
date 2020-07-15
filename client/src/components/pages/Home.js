@@ -27,9 +27,6 @@ function Home() {
         <div className="github">
           <img src={Icons.githubSquare} alt="githubSquare" />
         </div>
-        <div className="youtubeSquare">
-          <img src={Icons.youtubeSquare} alt="youtubeSquare" />
-        </div>
       </div>
     </div>
   );

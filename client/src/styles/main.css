@@ -107,12 +107,9 @@ a:visited {
 
 .side-drawer {
   height: 100%;
-  background: #FF4E50;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, right top, left top, from(#F9D423), to(#FF4E50));
-  background: linear-gradient(to left, #F9D423, #FF4E50);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 1px 0 7px rgba(127, 125, 125, 0.1);
+          box-shadow: 1px 0 7px rgba(127, 125, 125, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -190,7 +187,6 @@ a:visited {
 
 .main {
   padding-top: 70px;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,12 +241,44 @@ a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .linkedin,
-.github,
-.youtubeSquare {
-  width: 50px;
+.github {
+  width: 80px;
   padding: 0 10px;
+}
+
+.footer {
+  color: #fffafa;
+  border-top: 1px dotted rgba(255, 255, 255, 0.4);
+  background: #c31432;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#240b36), to(#c31432));
+  background: linear-gradient(to left, #240b36, #c31432);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  font-weight: 100;
+}
+
+.footer p {
+  padding: 10px 0;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=main.css.map */

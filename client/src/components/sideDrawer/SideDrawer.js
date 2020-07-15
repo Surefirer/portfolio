@@ -61,21 +61,6 @@ const sideDrawer = (props) => {
           </li>
         </Link>
       </ul>
-      <div className="side-drawer__social">
-        <div className="side-drawer__socialWrapper1">
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.youtube.com/channel/UCWSJggjVEluC4rS54BbliPQ?view_as=public"
-          >
-            <img
-              className="side-drawer__svg--social"
-              src={Icons.youtube}
-              alt="youtube"
-            ></img>
-          </a>
-        </div>
-      </div>
     </nav>
   );
 };

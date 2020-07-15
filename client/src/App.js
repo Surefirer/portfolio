@@ -7,6 +7,7 @@ import AboutMe from "./components/pages/AboutMe";
 import Resume from "./components/pages/Resume";
 import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
   state = {
@@ -40,6 +41,7 @@ class App extends React.Component {
           <Route path="/projects" exact component={Projects} />
           <Route path="/contact" exact component={Contact} />
         </Switch>
+        <Footer />
       </Router>
     );
   }
