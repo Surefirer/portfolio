@@ -1,0 +1,65 @@
+.contactMain {
+    height: 100vh;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.contact-title {
+    margin: 20px 0;
+}
+
+.contact-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-card {
+    width: 250px;
+    height: 80px;
+    margin: 20px 20px;
+    padding: 10px;
+    line-height: 2.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__emailIcon:before {
+        display: inline-block;
+        content: url("../assets/icons/envelope.svg");
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+    &__phoneIcon:before {
+        display: inline-block;
+        content: url("../assets/icons/phone-alt.svg");
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+    &__weixinIcon:before {
+        display: inline-block;
+        content: url("../assets/icons/weixin.svg");
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+}
+
+//desktop
+@include desktop {
+    .contact-card-container {
+        margin-top: 100px;
+    }
+    .avatar {
+        margin: 50px 0;
+    }
+}

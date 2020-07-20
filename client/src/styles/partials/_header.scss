@@ -1,5 +1,6 @@
 .nav-bar {
     width: 100%;
+    margin: 0 auto;
     height: 50px;
     display: flex;
     z-index: 300;
@@ -27,4 +28,45 @@
 
 .scrolled {
     background: rgba(0, 0, 0, 0.1);
+}
+
+//tablet
+@include tablet {
+    .nav-bar {
+        &__title {
+            justify-content: left;
+            margin-left: 50px;
+        }
+        &__menu {
+            display: inline-block;
+            ul {
+                display: flex;
+                margin: auto 10px;
+                li {
+                    padding: 0 10px;
+                    font-size: 0.8rem;
+                    width: 65px;
+                }
+            }
+        }
+    }
+}
+
+//desktop
+@include desktop {
+    .nav-bar {
+        &__title {
+            margin-left: 70px;
+        }
+        &__menu {
+            ul {
+                margin-right: 50px;
+                li {
+                    padding: 0 30px;
+                    font-size: 1rem;
+                    width: 80px;
+                }
+            }
+        }
+    }
 }

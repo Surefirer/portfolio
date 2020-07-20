@@ -1,0 +1,43 @@
+.projectCard {
+    width: 250px;
+    background-color: white;
+    margin: 20px 20px;
+    border-radius: 4px;
+    // border: 1px solid white;
+    &__cover {
+        img {
+            width: 250px;
+            border-radius: 5px 5px 0 0;
+        }
+    }
+    &__desc {
+        // color: white;
+        border-top: 1px solid rgb(169, 169, 169);
+        border-bottom: 1px solid rgb(169, 169, 169);
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
+    &__btn {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 5px;
+        button {
+            border-radius: 5px;
+            border: none;
+            padding: 5px 10px;
+            background-color: #11ffee00;
+        }
+    }
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 950px;
+}
+
+.projectsMain {
+    // margin-top: 20px;
+    padding-bottom: 50px;
+}

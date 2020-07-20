@@ -2,9 +2,8 @@ import React from "react";
 
 function Resume() {
   return (
-    <div>
-      <h1>Resume Page</h1>
-      <h1>Resume Page</h1>
+    <div className="main resumeMain">
+      <h1>Download My Resume</h1>
     </div>
   );
 }

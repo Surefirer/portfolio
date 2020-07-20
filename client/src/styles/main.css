@@ -1,3 +1,6 @@
+/* ==========================================================================
+   mixins for screen sizes
+   ========================================================================== */
 html,
 body {
   margin: 0;
@@ -32,6 +35,7 @@ a:visited {
 
 .nav-bar {
   width: 100%;
+  margin: 0 auto;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +75,43 @@ a:visited {
 
 .scrolled {
   background: rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .nav-bar__title {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-left: 50px;
+  }
+  .nav-bar__menu {
+    display: inline-block;
+  }
+  .nav-bar__menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 10px;
+  }
+  .nav-bar__menu ul li {
+    padding: 0 10px;
+    font-size: 0.8rem;
+    width: 65px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .nav-bar__title {
+    margin-left: 70px;
+  }
+  .nav-bar__menu ul {
+    margin-right: 50px;
+  }
+  .nav-bar__menu ul li {
+    padding: 0 30px;
+    font-size: 1rem;
+    width: 80px;
+  }
 }
 
 .toggle-button {
@@ -135,6 +176,7 @@ a:visited {
 
 .side-drawer__menu {
   color: white;
+  font-weight: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,6 +225,23 @@ a:visited {
 .side-drawer a:hover,
 .side-drawer a:active {
   color: yellow;
+}
+
+@media (min-width: 768px) {
+  .side-drawer__menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .side-drawer__menu li {
+    margin-top: 100px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
 }
 
 .main {
@@ -234,6 +293,10 @@ a:visited {
   font-weight: 100;
 }
 
+.skillShow {
+  display: none;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,8 +310,46 @@ a:visited {
 
 .linkedin,
 .github {
-  width: 80px;
+  width: 60px;
   padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .avatar {
+    margin: 30px 0;
+  }
+  .info__titleWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info__titleWrapper h1 {
+    margin: 0 10px;
+  }
+  .skillShow {
+    width: 650px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 50px 0;
+  }
+  .skillShow img {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    border-radius: 10px;
+  }
+  .social {
+    display: none;
+  }
 }
 
 .footer {
@@ -280,5 +381,254 @@ a:visited {
 .footer p {
   padding: 10px 0;
   font-size: 0.8rem;
+}
+
+.footer__social {
+  display: none;
+}
+
+.footerContainter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer__social {
+    width: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__social img {
+    width: 50px;
+  }
+}
+
+.aboutMain {
+  padding-top: 70px;
+  color: white;
+}
+
+.aboutDesc {
+  width: 90%;
+  padding-bottom: 50px;
+}
+
+.aboutDesc p {
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+.aboutMain-container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .aboutMain {
+    height: 100vh;
+  }
+  .aboutMain-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 50px;
+  }
+  .aboutMainAvatar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 50px;
+    font-size: 0.8rem;
+  }
+  .aboutDesc {
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .aboutMainAvatar {
+    padding-right: 100px;
+  }
+  .aboutDesc {
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+.projectCard {
+  width: 250px;
+  background-color: white;
+  margin: 20px 20px;
+  border-radius: 4px;
+}
+
+.projectCard__cover img {
+  width: 250px;
+  border-radius: 5px 5px 0 0;
+}
+
+.projectCard__desc {
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+  font-size: 0.8rem;
+  padding: 10px 20px;
+}
+
+.projectCard__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 5px;
+}
+
+.projectCard__btn button {
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  background-color: #11ffee00;
+}
+
+.card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 950px;
+}
+
+.projectsMain {
+  padding-bottom: 50px;
+}
+
+.contactMain {
+  height: 100vh;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.contact-title {
+  margin: 20px 0;
+}
+
+.contact-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-card {
+  width: 250px;
+  height: 80px;
+  margin: 20px 20px;
+  padding: 10px;
+  line-height: 2.5rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-card__emailIcon:before {
+  display: inline-block;
+  content: url("../assets/icons/envelope.svg");
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.contact-card__phoneIcon:before {
+  display: inline-block;
+  content: url("../assets/icons/phone-alt.svg");
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.contact-card__weixinIcon:before {
+  display: inline-block;
+  content: url("../assets/icons/weixin.svg");
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+@media (min-width: 1080px) {
+  .contact-card-container {
+    margin-top: 100px;
+  }
+  .avatar {
+    margin: 50px 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

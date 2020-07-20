@@ -1,5 +1,6 @@
 import React from "react";
 import DrawerToggleButton from "../components/sideDrawer/DrawerToggleButton";
+import { Link } from "react-router-dom";
 
 class Header extends React.Component {
   componentDidMount() {
@@ -29,10 +30,19 @@ class Header extends React.Component {
         </div>
         <div className="nav-bar__menu">
           <ul>
+            <Link to={"/"}>
+              <li>Home</li>
+            </Link>
+            <Link to={"/projects"}>
+              <li>Project</li>
+            </Link>
+            <Link to={"/about"}>
+              <li>About Me</li>
+            </Link>
             <li>Resume</li>
-            <li>About Me</li>
-            <li>Project</li>
-            <li>Contact</li>
+            <Link to={"/contact"}>
+              <li>Contact</li>
+            </Link>
           </ul>
         </div>
       </div>
