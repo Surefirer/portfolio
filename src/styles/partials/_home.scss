@@ -1,6 +1,5 @@
 .main {
     padding-top: 70px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +41,16 @@
 }
 
 .skillShow {
-    display: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 10px;
+    }
 }
 
 .social {
