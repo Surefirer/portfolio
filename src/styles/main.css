@@ -294,6 +294,7 @@ a:visited {
 }
 
 .skillShow {
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
