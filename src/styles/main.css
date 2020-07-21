@@ -495,15 +495,19 @@ a:visited {
 }
 
 .projectCard {
-  width: 250px;
+  width: 260px;
   background-color: white;
   margin: 20px 20px;
   border-radius: 4px;
 }
 
+.projectCard__cover {
+  width: 260px;
+  height: 200px;
+}
+
 .projectCard__cover img {
-  width: 250px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 
 .projectCard__desc {
@@ -524,9 +528,16 @@ a:visited {
 
 .projectCard__btn button {
   border-radius: 5px;
-  border: none;
+  border: 1px solid black;
   padding: 5px 10px;
   background-color: #11ffee00;
+  cursor: pointer;
+  outline: none;
+}
+
+.projectCard__btn button:hover {
+  background-color: black;
+  color: white;
 }
 
 .card-wrapper {

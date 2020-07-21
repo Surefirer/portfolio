@@ -1,13 +1,14 @@
 .projectCard {
-    width: 250px;
+    width: 260px;
     background-color: white;
     margin: 20px 20px;
     border-radius: 4px;
     // border: 1px solid white;
     &__cover {
+        width: 260px;
+        height: 200px;
         img {
-            width: 250px;
-            border-radius: 5px 5px 0 0;
+            border-radius: 4px 4px 0 0;
         }
     }
     &__desc {
@@ -23,9 +24,15 @@
         padding: 10px 5px;
         button {
             border-radius: 5px;
-            border: none;
+            border: 1px solid black;
             padding: 5px 10px;
             background-color: #11ffee00;
+            cursor: pointer;
+            outline: none;
+        }
+        button:hover {
+            background-color: black;
+            color: white;
         }
     }
 }

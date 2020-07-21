@@ -13,14 +13,13 @@ function AboutMe() {
         <div className="aboutDesc">
           <p>
             Hi! I am Weizhen Liang. A Vancouver-based full stack web developer
-            who loves building website.
+            who loves building websites.
           </p>
           <p>
-            I have a Bachelor of Business Administration from University of
+            I have a Bachelor of Business Administration from the University of
             Winnipeg. I am an experienced operations specialist with a
             demonstrated history of working in the hospitality and franchising
-            industry. Recentlly decided to change my career to web
-            developerment.{" "}
+            industry. Recently decided to change my career to web development.{" "}
           </p>
           <p>
             I fell in love with coding during my gaming private server project
