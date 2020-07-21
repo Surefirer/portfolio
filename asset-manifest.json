@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.26bb143c.chunk.css",
+    "main.js": "/portfolio/static/js/main.ba80b185.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ba80b185.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.5676a5cc.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.5676a5cc.js.map",
+    "static/js/2.599c216c.chunk.js": "/portfolio/static/js/2.599c216c.chunk.js",
+    "static/js/2.599c216c.chunk.js.map": "/portfolio/static/js/2.599c216c.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.6a266afce0ea12a78a5a38301c1abae7.js": "/portfolio/precache-manifest.6a266afce0ea12a78a5a38301c1abae7.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.26bb143c.chunk.css.map": "/portfolio/static/css/main.26bb143c.chunk.css.map",
+    "static/js/2.599c216c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.599c216c.chunk.js.LICENSE.txt",
+    "static/media/Avatar.jpg": "/portfolio/static/media/Avatar.b391f323.jpg",
+    "static/media/comment-alt-smile.svg": "/portfolio/static/media/comment-alt-smile.bfec5e28.svg",
+    "static/media/main.css": "/portfolio/static/media/weixin.caa6bb78.svg",
+    "static/media/github-square.svg": "/portfolio/static/media/github-square.3a25dc85.svg",
+    "static/media/home-lg.svg": "/portfolio/static/media/home-lg.af1bf071.svg",
+    "static/media/html5.png": "/portfolio/static/media/html5.8bc8a958.png",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.9463b264.svg",
+    "static/media/meh-blank.svg": "/portfolio/static/media/meh-blank.12d3d663.svg",
+    "static/media/nodejs.png": "/portfolio/static/media/nodejs.bd2f8ce0.png",
+    "static/media/project-diagram.svg": "/portfolio/static/media/project-diagram.476b7c13.svg",
+    "static/media/project1.png": "/portfolio/static/media/project1.8961ffd0.png",
+    "static/media/project2-brainflix.png": "/portfolio/static/media/project2-brainflix.34bed97b.png",
+    "static/media/project3-bandsite.png": "/portfolio/static/media/project3-bandsite.2768726f.png",
+    "static/media/project4-instock.png": "/portfolio/static/media/project4-instock.a3fa75e3.png",
+    "static/media/project5-travelsite.png": "/portfolio/static/media/project5-travelsite.1f8d9273.png",
+    "static/media/project6-protfolio.png": "/portfolio/static/media/project6-protfolio.1e0953b4.png",
+    "static/media/react.png": "/portfolio/static/media/react.7808eede.png",
+    "static/media/sass.png": "/portfolio/static/media/sass.a2b6f846.png",
+    "static/media/user-tie.svg": "/portfolio/static/media/user-tie.ffd2d17d.svg",
+    "static/media/youtube-square.svg": "/portfolio/static/media/youtube-square.b44a874a.svg",
+    "static/media/youtube.svg": "/portfolio/static/media/youtube.e37be422.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5676a5cc.js",
+    "static/js/2.599c216c.chunk.js",
+    "static/css/main.26bb143c.chunk.css",
+    "static/js/main.ba80b185.chunk.js"
+  ]
+}
