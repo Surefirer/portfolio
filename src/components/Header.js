@@ -39,7 +39,13 @@ class Header extends React.Component {
             <Link to={"/about"}>
               <li>About Me</li>
             </Link>
-            <li>Resume</li>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://mega.nz/file/FWpCFARK#C_2Fp921KaM11pRZ9OCoX6506TztZeTYenD6_L0OJyg"
+            >
+              <li>Resume</li>
+            </a>
             <Link to={"/contact"}>
               <li>Contact</li>
             </Link>

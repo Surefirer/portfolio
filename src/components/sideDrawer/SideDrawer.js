@@ -40,10 +40,20 @@ const sideDrawer = (props) => {
             About Me
           </li>
         </Link>
-        <li>
-          <img className="side-drawer__svg" src={Icons.userTie} alt="Resume" />
-          Resume
-        </li>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://mega.nz/file/FWpCFARK#C_2Fp921KaM11pRZ9OCoX6506TztZeTYenD6_L0OJyg"
+        >
+          <li>
+            <img
+              className="side-drawer__svg"
+              src={Icons.userTie}
+              alt="Resume"
+            />
+            Resume
+          </li>
+        </a>
         <Link to={"/contact"}>
           <li>
             <img
