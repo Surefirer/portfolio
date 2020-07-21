@@ -26,7 +26,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL} y>
         <div style={{ height: "100%" }}>
           <Header drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer
