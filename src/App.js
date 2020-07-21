@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import SideDrawer from "./components/sideDrawer/SideDrawer";
 import Home from "./components/pages/Home";
@@ -36,8 +36,7 @@ class App extends React.Component {
         </div>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/portfolio" exact component={Home} />
-          <Route path="/portfolio/about" exact component={AboutMe} />
+          <Route path="/about" exact component={AboutMe} />
           <Route path="/resume" exact component={Resume} />
           <Route path="/projects" exact component={Projects} />
           <Route path="/contact" exact component={Contact} />

@@ -36,7 +36,7 @@ class Header extends React.Component {
             <Link to={"/projects"}>
               <li>Project</li>
             </Link>
-            <Link to={"/portfolio/about"}>
+            <Link to={"/about"}>
               <li>About Me</li>
             </Link>
             <li>Resume</li>
